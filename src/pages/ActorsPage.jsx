@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ActorModel from "../models/ActorModel";
 import { Container } from 'react-bootstrap';
+import ActorCard from "../components/ActorCard";
 
 function ActorsPage(props) {
     const [actors, setActors] = useState([
@@ -11,8 +12,13 @@ function ActorsPage(props) {
 
     ]);
 
+    const actorsCards = actors.map(actor => <ActorCard actor={actor}/>);
+
     return (
         <Container className="p-actors">
+            <div className="row">
+                {actorsCards}
+            </div>
         </Container>
     );
 }
