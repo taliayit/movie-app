@@ -24,10 +24,24 @@ function ActorsPage(props) {
         setInput(input);
         setActors(filtered);
     }
-
+    
     const updateSort = (sort) => {
+        var sorted = [];
+        switch(sort) {
+            case 'First Name':
+                sorted = actors.sort((a1, a2) => a1.fname > a2.fname ? 1 : -1);
+                break;
+            case 'Last Name':
+                sorted = actors.sort((a1, a2) => a1.lname > a2.lname ? 1 : -1);
+                break;
+            case 'Age':
+                sorted = actors.sort((a1, a2) => a1.age() > a2.age() ? 1 : -1);
+                break;
+            default:
+                break;
+        }
         setSort(sort);
-        // setActors(sorted);
+        setActors(sorted);
     }
 
     const actorsCards = actors.map(actor => <ActorCard actor={actor}/>);
