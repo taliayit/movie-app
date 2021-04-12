@@ -3,6 +3,7 @@ import ActorModel from "../models/ActorModel";
 import { Container } from 'react-bootstrap';
 import ActorCard from "../components/ActorCard";
 import SearchBar from "../components/SearchBar";
+import SortDropdown from "../components/SortDropdown";
 
 function ActorsPage(props) {
     var actorsData = [
@@ -27,7 +28,10 @@ function ActorsPage(props) {
     
     return (
         <Container className="p-actors">
-            <SearchBar input={input} onInputChange={updateInput}/>
+            <div className="row">
+                <SearchBar input={input} onInputChange={updateInput}/>
+                <SortDropdown/>
+            </div>
             <div className="row">
                 {actorsCards}
             </div>
