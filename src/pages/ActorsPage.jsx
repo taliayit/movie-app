@@ -21,13 +21,16 @@ function ActorsPage(props) {
         const filtered = actorsData.filter(actor => {
             return (actor.fname.toLowerCase().includes(input.toLowerCase())) || (actor.lname.toLowerCase().includes(input.toLowerCase()));
         });
+        // if (sort !== "Sort") {
+        //     setSort('Sort');
+        // }
         setInput(input);
         setActors(filtered);
     }
     
-    const updateSort = (sort) => {
+    const updateSort = (sortBy) => {
         var sorted = [];
-        switch(sort) {
+        switch(sortBy) {
             case 'First Name':
                 sorted = actors.sort((a1, a2) => a1.fname > a2.fname ? 1 : -1);
                 break;
@@ -40,7 +43,7 @@ function ActorsPage(props) {
             default:
                 break;
         }
-        setSort(sort);
+        setSort(sortBy);
         setActors(sorted);
     }
 
