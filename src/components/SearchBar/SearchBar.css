@@ -1,6 +1,8 @@
 .searchbar-input {
     width: 100%;
-    background-color: #F2F1F9;
-    border: none;
+    height: 100%;
+    /* background-color: #F2F1F9; */
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 3px;
     padding: 0.5rem;
 }

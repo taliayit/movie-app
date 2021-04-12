@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import ActorCard from "../../components/ActorCard/ActorCard";
 import SearchBar from "../../components/SearchBar/SearchBar";
 import SortDropdown from "../../components/SortDropdown/SortDropdown";
+import './ActorsPage.css'
 
 function ActorsPage(props) {
     var actorsData = [
@@ -29,6 +30,7 @@ function ActorsPage(props) {
     }
     
     const updateSort = (sortBy) => {
+        console.log(sortBy)
         var sorted = [];
         switch(sortBy) {
             case 'First Name':
@@ -51,11 +53,11 @@ function ActorsPage(props) {
     
     return (
         <Container className="p-actors">
-            <div className="row">
-                <div className="col-10">
+            <div className="row py-3">
+                <div className="col-10 pr-0">
                     <SearchBar input={input} onInputChange={updateInput}/>
                 </div>
-                <div className="col-2">
+                <div className="col-2 pl-0">
                     <SortDropdown selected={sort} onSortChange={updateSort}/>
                 </div>
             </div>

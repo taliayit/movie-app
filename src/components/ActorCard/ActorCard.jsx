@@ -6,7 +6,7 @@ function ActorCard({actor}) {
             <div className="card">
                 <img src={actor.image} alt=""/>
                 <a href={actor.imdb} target="_blank">{actor.fname} {actor.lname}</a>
-                <p>{actor.age()}</p>
+                <span>{actor.age()}</span>
             </div>
         </div>
     );
