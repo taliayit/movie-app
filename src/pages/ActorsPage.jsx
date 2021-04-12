@@ -14,6 +14,7 @@ function ActorsPage(props) {
     ];
 
     const [input, setInput] = useState('');
+    const [sort, setSort] = useState('Sort');
     const [actors, setActors] = useState(actorsData);
 
     const updateInput = (input) => {
@@ -24,13 +25,18 @@ function ActorsPage(props) {
         setActors(filtered);
     }
 
+    const updateSort = (sort) => {
+        setSort(sort);
+        // setActors(sorted);
+    }
+
     const actorsCards = actors.map(actor => <ActorCard actor={actor}/>);
     
     return (
         <Container className="p-actors">
             <div className="row">
                 <SearchBar input={input} onInputChange={updateInput}/>
-                <SortDropdown/>
+                <SortDropdown selected={sort} onSortChange={updateSort}/>
             </div>
             <div className="row">
                 {actorsCards}
