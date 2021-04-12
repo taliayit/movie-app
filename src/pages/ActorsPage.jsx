@@ -2,6 +2,7 @@ import { useState } from "react";
 import ActorModel from "../models/ActorModel";
 import { Container } from 'react-bootstrap';
 import ActorCard from "../components/ActorCard";
+import SearchBar from "../components/SearchBar";
 
 function ActorsPage(props) {
     const [actors, setActors] = useState([
@@ -16,6 +17,7 @@ function ActorsPage(props) {
 
     return (
         <Container className="p-actors">
+            <SearchBar/>
             <div className="row">
                 {actorsCards}
             </div>
