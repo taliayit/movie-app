@@ -1,9 +1,10 @@
 import { Dropdown } from 'react-bootstrap';
+import './SortDropdown.css'
 
 function SortDropdown({selected, onSortChange}) {
     return (
-        <Dropdown id="sort-dropdown" onSelect = {(eventkey, event) => onSortChange(event.target.textContent)}>
-            <Dropdown.Toggle id="dropdown-toggle">
+        <Dropdown onSelect = {(eventkey, event) => onSortChange(event.target.textContent)}>
+            <Dropdown.Toggle id="dropdown-btn">
                 {selected}
             </Dropdown.Toggle>
             <Dropdown.Menu>

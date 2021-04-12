@@ -1,9 +1,9 @@
 import { useState } from "react";
-import ActorModel from "../models/ActorModel";
+import ActorModel from "../../models/ActorModel";
 import { Container } from 'react-bootstrap';
-import ActorCard from "../components/ActorCard";
-import SearchBar from "../components/SearchBar";
-import SortDropdown from "../components/SortDropdown";
+import ActorCard from "../../components/ActorCard/ActorCard";
+import SearchBar from "../../components/SearchBar/SearchBar";
+import SortDropdown from "../../components/SortDropdown/SortDropdown";
 
 function ActorsPage(props) {
     var actorsData = [
@@ -52,8 +52,12 @@ function ActorsPage(props) {
     return (
         <Container className="p-actors">
             <div className="row">
-                <SearchBar input={input} onInputChange={updateInput}/>
-                <SortDropdown selected={sort} onSortChange={updateSort}/>
+                <div className="col-10">
+                    <SearchBar input={input} onInputChange={updateInput}/>
+                </div>
+                <div className="col-2">
+                    <SortDropdown selected={sort} onSortChange={updateSort}/>
+                </div>
             </div>
             <div className="row">
                 {actorsCards}

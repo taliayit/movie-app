@@ -1,8 +1,9 @@
-function SearchBar({ input, onInputChange }) {
-    const BarStyling = { background: "#F2F1F9", border: "none", padding: "0.5rem" };
+import './SearchBar.css'
 
-    return ( <
-        input style = { BarStyling }
+function SearchBar({ input, onInputChange }) {
+
+    return (
+        <input className = "searchbar-input"
         value = { input }
         placeholder = { "Search actor..." }
         onChange = { e => onInputChange(e.target.value) }
