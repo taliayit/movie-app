@@ -16,7 +16,8 @@ function ActorsPage(props) {
         new ActorModel("Sandra", "Bullock", "1964-07-26", "https://m.media-amazon.com/images/M/MV5BMTI5NDY5NjU3NF5BMl5BanBnXkFtZTcwMzQ0MTMyMw@@._V1_UY317_CR1,0,214,317_AL_.jpg", "https://www.imdb.com/name/nm0000113/?ref_=nmls_pst"),
         new ActorModel("Jessica", "Alba", "1981-04-28", "https://m.media-amazon.com/images/M/MV5BODYxNzE4OTk5Nl5BMl5BanBnXkFtZTcwODYyMDYzMw@@._V1_UY317_CR12,0,214,317_AL_.jpg", "https://www.imdb.com/name/nm0004695/?ref_=nmls_pst"),
         new ActorModel("Brad", "Pitt", "1963-12-18", "https://m.media-amazon.com/images/M/MV5BMjA1MjE2MTQ2MV5BMl5BanBnXkFtZTcwMjE5MDY0Nw@@._V1_UX214_CR0,0,214,317_AL_.jpg", "https://www.imdb.com/name/nm0000093/?ref_=nmls_hd"),
-        new ActorModel("Gal", "Gadot", "1985-04-30", "https://m.media-amazon.com/images/M/MV5BMjUzZTJmZDItODRjYS00ZGRhLTg2NWQtOGE0YjJhNWVlMjNjXkEyXkFqcGdeQXVyMTg4NDI0NDM@._V1_UY317_CR51,0,214,317_AL_.jpg", "https://www.imdb.com/name/nm2933757/?ref_=nv_sr_srsg_0")
+        new ActorModel("Gal", "Gadot", "1985-04-30", "https://m.media-amazon.com/images/M/MV5BMjUzZTJmZDItODRjYS00ZGRhLTg2NWQtOGE0YjJhNWVlMjNjXkEyXkFqcGdeQXVyMTg4NDI0NDM@._V1_UY317_CR51,0,214,317_AL_.jpg", "https://www.imdb.com/name/nm2933757/?ref_=nv_sr_srsg_0"),
+        new ActorModel("Jennifer", "Aniston", "1969-02-11", "https://m.media-amazon.com/images/M/MV5BNjk1MjIxNjUxNF5BMl5BanBnXkFtZTcwODk2NzM4Mg@@._V1_UY317_CR3,0,214,317_AL_.jpg", "https://www.imdb.com/name/nm0000098/?ref_=nmls_hd")
     ];
 
     const [input, setInput] = useState('');
@@ -58,11 +59,11 @@ function ActorsPage(props) {
     
     return (
         <Container className="p-actors">
-            <div className="row py-3">
-                <div className="col-10 pr-0">
+            <div className="row py-3 justify-content-between">
+                <div className="col-sm-12 col-md-8 col-lg-9">
                     <SearchBar input={input} onInputChange={updateInput}/>
                 </div>
-                <div className="col-2">
+                <div className="col-sm-12 col-md-4 col-lg-3">
                     <SortDropdown selected={sort} onSortChange={updateSort}/>
                 </div>
             </div>
