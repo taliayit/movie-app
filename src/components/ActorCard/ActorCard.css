@@ -1,3 +1,10 @@
 .card {
     padding: 10px;
+    margin-bottom: 15px;
+}
+
+.card>.actor-name {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
