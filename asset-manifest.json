@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/taliayit/movie-app/static/css/main.bb1b7a6d.chunk.css",
+    "main.js": "/taliayit/movie-app/static/js/main.0d204fc8.chunk.js",
+    "main.js.map": "/taliayit/movie-app/static/js/main.0d204fc8.chunk.js.map",
+    "runtime-main.js": "/taliayit/movie-app/static/js/runtime-main.aaa298c1.js",
+    "runtime-main.js.map": "/taliayit/movie-app/static/js/runtime-main.aaa298c1.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/taliayit/movie-app/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.bd1603c8.chunk.js": "/taliayit/movie-app/static/js/2.bd1603c8.chunk.js",
+    "static/js/2.bd1603c8.chunk.js.map": "/taliayit/movie-app/static/js/2.bd1603c8.chunk.js.map",
+    "static/js/3.bca833cc.chunk.js": "/taliayit/movie-app/static/js/3.bca833cc.chunk.js",
+    "static/js/3.bca833cc.chunk.js.map": "/taliayit/movie-app/static/js/3.bca833cc.chunk.js.map",
+    "index.html": "/taliayit/movie-app/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/taliayit/movie-app/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.bb1b7a6d.chunk.css.map": "/taliayit/movie-app/static/css/main.bb1b7a6d.chunk.css.map",
+    "static/js/2.bd1603c8.chunk.js.LICENSE.txt": "/taliayit/movie-app/static/js/2.bd1603c8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/taliayit/movie-app/static/media/movie-pattern-3.ce252689.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aaa298c1.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.bd1603c8.chunk.js",
+    "static/css/main.bb1b7a6d.chunk.css",
+    "static/js/main.0d204fc8.chunk.js"
+  ]
+}
